@@ -1,0 +1,28 @@
+.banner-Container {
+
+    display: flex;
+    width: 100%; 
+    align-items: center;
+    justify-content: center;
+    top: 171px;
+    left: 100px;    
+}
+
+.banner {
+    display: flex;
+    background-image: url('../../assets/IMG.png');
+    width: 95%;
+    height: 223px;
+    border-radius: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-titre {
+    font-size: 48px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 68.45px;
+}

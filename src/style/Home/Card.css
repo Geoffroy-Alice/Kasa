@@ -1,0 +1,18 @@
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allCard {
+    height: 829px;
+    top: 437px;
+    left: 100px;
+    width: 95%;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}

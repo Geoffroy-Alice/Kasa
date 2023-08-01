@@ -2,7 +2,7 @@ import React from 'react';
 import '../../style/Home/Home.css';
 import Header from '../../components/Home/Header';
 import Banner from '../../components/Home/Banner';
-import Gallery from '../../components/Home/Gallery';
+import Card from '../../components/Home/Card';
 import Footer from '../../components/Home/Footer';
 
 
@@ -11,7 +11,7 @@ function Home() {
         <div className='home'>
             <Header />
             <Banner />
-            <Gallery />
+            <Card />
             <Footer />
         </div>
 )

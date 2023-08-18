@@ -1,21 +1,23 @@
 .header {
     padding: 45px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    max-width: 100%;
 }
 
 .logo {
     display: flex;
     background-image: url('../../assets/LOGO.png');
-    width: 100%;
+    width: 60%;
     height: 68px;
     background-repeat: no-repeat;
 }
 
 .pages_nav {
     display: flex;
-    justify-content: space-between;
-    width: 309px;
+    justify-content: flex-end;
+    width: 40%;
     height: 34px;
     font-size: 24px;
     font-weight: 500;
@@ -38,8 +40,44 @@
     height: 34px;
     text-decoration: none;
     color: #ff6060;
+    margin-left: 100px;
 }
 
 .page_Apropos:hover {
     border-bottom: 3px solid #ff6060;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+    .logo{
+        width: 40%;
+    }
+    .pages_nav{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header{
+        width: 93%;
+        height: 47px;
+        padding: 30px 20px 30px 20px;
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 45%;
+        background-image: url('../../assets/LOGO-media.png');
+    }
+
+    .pages_nav {
+        font-size: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .page_Apropos{
+        padding-left: 20px;
+        margin: 0;
+    }
 }

@@ -12,16 +12,15 @@ function Collapse ({title, description}){
     const handleOpen = () => {
         setOpen(!Open);
     }
-//-----On englobe la div à basculer dans des accolades pour utiliser JS-----
-//----- L' opérateur && est là pour déterminer la partie vraie-----
+
     return (
         <div className="info">
             <div className="infos">
                 <h1 className="title">{title}
-                    <img src={Chevron} className="chevron" onClick={handleOpen} alt="chevron"/>
+                    <img src={Chevron} className={Open ? 'chevron' : 'chevron-open'} onClick={handleOpen} alt="chevron"/>
                 </h1>
             </div>
-            {Open &&
+            {Open && //-----Si le collapse est ouvert alors on affiche la description-----
             <div className="info-description">
                 <p>{description}</p>
             </div>}

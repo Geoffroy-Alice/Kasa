@@ -11,7 +11,7 @@ function Slideshow() {
     return (
         <div className="slideshow-container" key={logement.id}>
             {logements.map(pictures => 
-            <img className="slideshow-image" src={pictures.pictures} alt="images-appartement"/>)}
+            <img className="slideshow-image" src={logement.pictures} alt="images-appartement"/>)}
                 <div className="chevrons">
                     <div className="chevron-gauche" src={ChevronG} alt="chevron-gauche"></div>
                     <div className="chevron-droit" src={ChevronD} alt="chevron-droit"></div>

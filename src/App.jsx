@@ -1,8 +1,8 @@
 import React from 'react';
 //-----On importe les pages-----
 import About from './pages/About/About';
-import Accommodation from './pages/About/About';
-import Error from './pages/Error/Error';
+import Accommodation from './pages/Accommodation/Accommodation';
+// import Error from './pages/Error/Error';
 import Home from './pages/Home/Home';
 //-----On importe-----
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -13,8 +13,8 @@ function App () {
     <BrowserRouter>
       <Routes>
         <Route path = '/' element = {<Home />} />
-        <Route path = '*' element = {<Error />} />
-        <Route path = '/Accomodation/:id' element = {<Accommodation />} />
+        {/* <Route path = '*' element = {<Error />} /> */}
+        <Route path = '/Accommodation/:id' element = {<Accommodation />} />
         <Route path = '/About' element = {<About />} />
       </Routes>
     </BrowserRouter>

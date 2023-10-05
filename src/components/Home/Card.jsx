@@ -9,7 +9,7 @@ function Card (){
             <div className='allCard'>
                 <div className='cards'>
                     {Rentals.map(location =>
-                    <NavLink key={location.id} className='retail-card' to='/location/+location.id'>
+                    <NavLink key={location.id} className='retail-card' to={"/location/"+location.id}>
                             <img className='card-image' src={location.cover} alt='imageLogement'/>
                             <div className='card-title'>
                                 <h2 className='card-title-texte'>{location.title}</h2>

@@ -30,17 +30,18 @@
     text-align: left;
     color: #FFFFFF;
     padding-left: 20px;
-    padding-right: 20px;
     margin: 0;
-
 }
 
 .chevron {
     cursor: pointer;
     transform: rotate(0deg);
+    padding: 20px;
 }
 
 .chevron-open {
+    cursor: pointer;
+    padding: 20px;
     transform: rotate(180deg);
 }
 

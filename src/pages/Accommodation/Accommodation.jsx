@@ -6,13 +6,14 @@ import Main from '../../components/Accommodation/Main';
 import Footer from '../../components/Footer';
 
 function Accommodation() {
+
     return (
-        <>
+        <div className='accommodation'>
             <Header />
             <Slideshow />
             <Main />
             <Footer />
-        </>
+        </div>
     )
 }
 

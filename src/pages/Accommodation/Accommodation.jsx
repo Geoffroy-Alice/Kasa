@@ -15,11 +15,8 @@ function Accommodation() {
         <section className='accommodation' key={logement.id}>
             <Header />
         <div className="accommodation-container" >
-                    <Slideshow pictures={location.pictures}/>
-                    <Description 
-                        title = {location.title}
-                        description = {location.description}
-                    />
+                    <Slideshow pictures={logement.pictures}/>
+                    <Description />
         </div>
             <Footer />
         </section>

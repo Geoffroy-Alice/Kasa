@@ -13,10 +13,10 @@ function Card() {
                 <div className="description-logement">
                     <div className="titre-&-lieu">
                         <div className="titre-logement">
-
+                            <h1>{logement.title}</h1>
                         </div>
                         <div className="lieu-logement">
-
+                            <h2>{logement.location}</h2>
                         </div>
                     </div>
                     <div className="proprietaire">
@@ -40,13 +40,12 @@ function Card() {
 
                 </div>
             </div>
-                            {/* title = {logement.title}
-                            description = {logement.description}
+                            {/* description = {logement.description}
                             host = {logement.host}
                             rating = {logement.rating}
                             location = {logement.location}
                             equipments = {logement.equipments}
-                            tags = {logement.tags}  */}
+                            tags = {logement.tags} */}
         </div>
 
     )

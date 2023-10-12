@@ -1,10 +1,10 @@
 import React from "react";
 
-function Main() {
+function Card() {
     return (
         <>
         </>
     )
 }
 
-export default Main;
+export default Card;

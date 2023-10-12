@@ -1,0 +1,30 @@
+.slideshow-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.slideshow-image{
+    width: 95%;
+    height: 415px;
+    position: relative;
+    object-fit: cover;
+    display: flex;
+}
+
+.chevron{
+    display: flex;
+    align-items: center;
+}
+
+.chevron-gauche{
+    color: #FFFFFF;
+    position: absolute;
+}
+
+.chevron-droit{
+    color: #FFFFFF;
+    position: absolute;
+}

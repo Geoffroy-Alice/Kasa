@@ -96,6 +96,9 @@ h3{
     .lieu-logement{
         font-size: 16px;
     }
+    .description-tags{
+        flex-wrap: wrap;
+    }
     .proprietaire-name{
         font-size: 17px;
     }

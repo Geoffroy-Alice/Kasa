@@ -99,6 +99,10 @@ li{
         font-size: 22px;
     }
 
+    p{
+        font-size: 22px;
+    }
+
     .collapse-logement {
         flex-direction: column;
     }  
@@ -120,6 +124,10 @@ li{
 
     .info-title{
         width: 98%;
+    }
+
+    p{
+        font-size: 20px;
     }
 
     .collapse-logement {

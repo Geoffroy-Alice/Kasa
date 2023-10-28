@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import '../../style/About/Collapse.css';
-import Chevron from '../../assets/Vector.png';
+import '.././style/About/Collapse.css';
+import Chevron from '.././assets/Vector.png';
 
 //-----Gestion de l'affichage des informations-----
 function Collapse ({title, description}){

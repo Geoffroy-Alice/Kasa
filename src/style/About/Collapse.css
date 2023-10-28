@@ -1,5 +1,5 @@
 .info{
-    width: 85%;
+    width: 90%;
     margin: 20px 0px;
     display: flex;
     flex-direction: column;
@@ -33,25 +33,27 @@
     margin: 0;
 }
 
-.chevron {
+.chevron{
     cursor: pointer;
     transform: rotate(0deg);
     padding: 20px;
 }
 
-.chevron-open {
+.chevron-open{
     cursor: pointer;
     padding: 20px;
     transform: rotate(180deg);
 }
 
 .info-description{
+    width: 100%;
     position: relative;
     background-color: #F6F6F6;
 }
 
-p {
+p{
     display: flex;
+    flex-direction: column;
     width: 95%;
     padding: 20px;
     color: #FF6060;
@@ -62,6 +64,34 @@ p {
     letter-spacing: 0em;
     text-align: left;
     padding-bottom: 20px;
+    list-style: none;
+}
+
+.collapse-logement{
+    width: 100%;
+    display: flex; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.collapse-container{
+    display: flex;
+    width: 100%;
+}
+
+.collapse-container-equipment{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+.list-equipment{
+    margin: 4px;
+}
+
+li{
+    list-style: none;
 }
 
 @media screen and (max-width: 767px) {

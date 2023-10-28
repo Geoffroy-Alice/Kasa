@@ -1,0 +1,90 @@
+.description-appart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logement{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 30px;
+    padding: 0 45px 0 45px;
+}
+
+.titre-logement{
+    font-family: Montserrat;
+    font-size: 36px;
+    text-align: left;
+    color: #FF6060;
+}
+
+h1{
+    margin: 0;
+    font-weight: 500;
+}
+
+.lieu-logement{
+    font-family: Montserrat;
+    font-size: 18px;
+    text-align: left;
+    color: #FF6060;
+}
+
+h2{
+    font-weight: 500;
+}
+
+.description-tags{
+    display: flex;
+    flex-direction: row;
+}
+
+.tags{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FF6060;
+    border-radius: 25px;
+    padding: 3px 30px;
+    margin: 5px;
+}
+
+.proprietaire{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.proprietaire-logement{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h3{
+    margin: 0;
+}
+
+.proprietaire-name{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+    color: #FF6060;
+    padding-right: 15px;
+}
+
+.proprietaire-photo{
+    width: 35%;
+}
+
+.photo-proprietaire{
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}

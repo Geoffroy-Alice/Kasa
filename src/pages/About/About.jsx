@@ -3,7 +3,7 @@ import '../../style/About/About.css'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Banner from '../../components/About/Banner'
-import Collapse from '../../components/About/Collapse'
+import Collapse from '../../components/Collapse'
 
 function About() {
     return (

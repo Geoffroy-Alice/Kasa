@@ -14,8 +14,8 @@ function Accommodation() {
     return (
         <section className='accommodation' key={logement.id}>
             <Header />
-        <div className="accommodation-container" >
-                    <Slideshow pictures={logement.pictures}/>
+        <div className="accommodation-container">
+                    <Slideshow  src={logement.pictures}/>
                     <Description />
         </div>
             <Footer />

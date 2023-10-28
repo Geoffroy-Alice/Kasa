@@ -1,6 +1,9 @@
 import React from "react";
 import { useParams } from 'react-router-dom';
+import '../../style/Accommodation/Description.css';
 import location from '../../data/logements.json';
+import Collapse from '../../components/Collapse';
+import Rating from './Rating';
 
 function Card() {
     const { id } = useParams();
@@ -9,7 +12,7 @@ function Card() {
     return (
 
         <div className='description-appart'>
-            <div className="logement">
+            <section className="logement">
                 <div className="description-logement">
                     <div className="titre-&-lieu">
                         <div className="titre-logement">
@@ -19,33 +22,48 @@ function Card() {
                             <h2>{logement.location}</h2>
                         </div>
                     </div>
-                    <div className="proprietaire">
-
-                    </div>
-                </div>
-                <div className="tags-&-etoiles">
                     <div className="description-tags">
-
+                        {logement.tags.map((tag, i) => (
+                            <div key={i} className="tags">
+                                {tag}
+                            </div>
+                        ))}
                     </div>
-                    <div className="description-etoiles">
-
+                </div>
+                <div className="proprietaire-logement">
+                    <div className="proprietaire">
+                        <div className="proprietaire-name">
+                            <h3>{logement.host.name}</h3>
+                        </div>
+                        <div className="proprietaire-photo">
+                            <img src={logement.host.picture} className="photo-proprietaire" alt="proprietaire"></img>
+                        </div>
+                    </div>
+                    <div>
+                        <Rating 
+                            rating={logement.rating}
+                        />
                     </div>
                 </div>
-            </div>
-            <div>
-                <div className="detail-logement">
-
+            </section>
+            <section className='collapse-logement'>
+                <div className="collapse-container">  
+                    <Collapse className="detail-logement"
+                        title={'Description'}
+                        description={logement.description}
+                    />
                 </div>
-                <div className="description-equipement">
-
+                <div className="collapse-container-equipment">
+                    <Collapse className="description-equipement"
+                        title={'Equipement'}              
+                        description={logement.equipments.map((eq, i) => (                      
+                            <ul key={i} className="list-equipment">
+                                <li>{eq}</li>
+                            </ul>                       
+                        ))}                  
+                    />
                 </div>
-            </div>
-                            {/* description = {logement.description}
-                            host = {logement.host}
-                            rating = {logement.rating}
-                            location = {logement.location}
-                            equipments = {logement.equipments}
-                            tags = {logement.tags} */}
+            </section>                                      
         </div>
 
     )

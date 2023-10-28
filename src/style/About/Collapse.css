@@ -94,8 +94,44 @@ li{
     list-style: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .title{
+        font-size: 22px;
+    }
+
+    .collapse-logement {
+        flex-direction: column;
+    }  
+
+    .collapse-container{
+        width: 111%;
+    }
+
+    .collapse-container-equipment{
+        width: 111%;
+        justify-content: flex-start;
+    } 
+}
+
 @media screen and (max-width: 767px) {
+    .title{
+        font-size: 20px;
+    }
+
     .info-title{
         width: 98%;
     }
+
+    .collapse-logement {
+        flex-direction: column;
+    }  
+
+    .collapse-container{
+        width: 111%;
+    }
+
+    .collapse-container-equipment{
+        width: 111%;
+        justify-content: flex-start;
+    } 
 }

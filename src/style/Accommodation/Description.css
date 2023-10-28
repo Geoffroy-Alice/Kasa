@@ -14,7 +14,7 @@
 
 .titre-logement{
     font-family: Montserrat;
-    font-size: 36px;
+    font-size: 33px;
     text-align: left;
     color: #FF6060;
 }
@@ -42,7 +42,7 @@ h2{
 
 .tags{
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0em;
@@ -87,4 +87,46 @@ h3{
     height: 64px;
     width: 64px;
     border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .titre-logement{
+        font-size: 30px;
+    }
+    .lieu-logement{
+        font-size: 16px;
+    }
+    .proprietaire-name{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logement{
+        flex-direction: column;
+    }
+
+    .titre-logement{
+        font-size: 26px;
+    }
+
+    .lieu-logement{
+        font-size: 14px;
+    }
+
+    .description-tags{
+        flex-wrap: wrap;
+    }
+
+    .proprietaire-logement{
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 30px;
+        justify-content: space-between;
+    }
+
+    .proprietaire-name{
+        font-size: 16px;
+    }
+
 }

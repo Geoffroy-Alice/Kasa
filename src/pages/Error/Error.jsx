@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import { NavLink } from 'react-router-dom';
 
 function Error() {
+
     return (
         <div className='error'>
             <Header />

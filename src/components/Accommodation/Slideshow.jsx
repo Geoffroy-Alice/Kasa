@@ -5,7 +5,7 @@ import ChevronD from '../../assets/Chevron-Droit.png';
 import ChevronG from '../../assets/Chevron-Gauche.png';
 import '../../style/Accommodation/Slidechow.css';
 
-function Slideshow() {
+function Slideshow(props) {
     const { id } = useParams();
     const logement = location.find(logement => logement.id === id);
 
@@ -29,12 +29,26 @@ function Slideshow() {
 
     return (
         <div className="slideshow-container">
-            <img className="slideshow-image"  alt="images-appartements"/>
-            <div className="chevrons">
-                <div className="chevron-gauche" onClick={slideLeft} src={ChevronG} alt="chevron-gauche"></div>
-                <div className="chevron-droit" onClick={slideRight} src={ChevronD} alt="chevron-droit"></div>
+            <div className="slideshow">
+                {props.pictures.map((pictures, i) =>
+                    <img className="slideshow-image" key={i} src={logement.pictures[imageSlide]} alt="images-appartements"/>
+                )}
             </div>
-            <div className="number-pictures"></div>
+            {(props.pictures.length > 1) && <>
+            <div className="chevrons">
+                <div onClick={slideLeft}>
+                        <img className="chevron-gauche" src={ChevronG} alt="chevron-gauche"/>
+                    </div>
+                <div onClick={slideRight}>
+                    <img className="chevron-droit" src={ChevronD} alt="chevron-droit"/>
+                </div>
+            </div>
+            </>
+            }
+            <p className="number-pictures">
+                    {imageSlide + 1} / {props.pictures.length}
+            </p>
+            
         </div>
     )
 }

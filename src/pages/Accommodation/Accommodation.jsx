@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import location from '../../data/logements.json';
 import '../../style/Accommodation/Accommodation.css';
 import Header from '../../components/Header';
@@ -11,11 +11,15 @@ function Accommodation() {
     const { id } = useParams();
     const logement = location.find(logement => logement.id === id);
 
+        if (logement === undefined || null) {
+            return <Navigate to="/Error" />
+        }
+
     return (
         <section className='accommodation' key={logement.id}>
             <Header />
         <div className="accommodation-container">
-                    <Slideshow  src={logement.pictures}/>
+                    <Slideshow  pictures={logement.pictures}/>
                     <Description />
         </div>
             <Footer />

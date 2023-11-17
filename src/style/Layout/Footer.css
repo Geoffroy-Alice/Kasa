@@ -15,13 +15,12 @@
     background-image: url('../../assets/LOGO-footer.png');
     background-repeat: no-repeat;
     width: 122px;
-    height: 39.444419860839844px;
+    height: 39.44px;
     padding-bottom: 20px;
 }
 
 .footer-texte {
     color: #FFFFFF;
-    font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
@@ -32,4 +31,11 @@
     align-items: center;
     margin: 0;
     padding-top: 20px;
+}
+
+@media (max-width: 400px) {
+    .footer-texte{
+        font-size: 16px;
+        padding-top: 0;
+    }
 }

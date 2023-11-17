@@ -70,7 +70,6 @@
     bottom: 0;
     background-color: rgb(0, 0, 0, .3);
     position: absolute;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
@@ -94,12 +93,45 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 401px) and (max-width: 767px) {
     .slideshow{
         height: 255px;
     }
 
     .slideshow-image{
         height: 255px;
+    }
+    .number-pictures{
+        opacity: 0;
+    }
+    .chevron-gauche{
+        Width: 11.67px; 
+        Height: 19.8px;
+    }
+    .chevron-droit{
+        Width: 11.67px; 
+        Height: 19.8px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .slideshow{
+        height: 170px;
+    }
+    .slideshow-image{
+        height: 170px;
+    }
+    .chevron-gauche{
+        Width: 11.67px; 
+        Height: 19.8px;
+        padding-left: 10px;
+    }
+    .chevron-droit{
+        Width: 11.67px; 
+        Height: 19.8px;
+        padding-right: 10px;
+    }
+    .number-pictures{
+        opacity: 0;
     }
 }

@@ -14,6 +14,8 @@
     filter: brightness(0.7);
 }
 
-@media screen and (max-width: 767px) {
-
+@media (max-width: 400px) {
+    .about-banner{
+        height: 170px;
+    }
 }

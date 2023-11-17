@@ -13,8 +13,7 @@
 }
 
 .titre-logement{
-    font-family: Montserrat;
-    font-size: 33px;
+    font-size: 36px;
     text-align: left;
     color: #FF6060;
 }
@@ -22,11 +21,12 @@
 h1{
     margin: 0;
     font-weight: 500;
+    line-height: 51.34px;
 }
 
 .lieu-logement{
-    font-family: Montserrat;
     font-size: 18px;
+    line-height: 25.67px;
     text-align: left;
     color: #FF6060;
 }
@@ -38,13 +38,13 @@ h2{
 .description-tags{
     display: flex;
     flex-direction: row;
+    padding-top: 30px;
 }
 
 .tags{
-    font-family: Montserrat;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 19.96px;
     letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
@@ -64,6 +64,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: 93px;
 }
 
 h3{
@@ -71,9 +72,9 @@ h3{
 }
 
 .proprietaire-name{
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
+    line-height: 25.67px;
     text-align: right;
     color: #FF6060;
     padding-right: 15px;
@@ -118,13 +119,14 @@ h3{
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 401px) and (max-width: 767px) {
     .logement{
         flex-direction: column;
     }
 
     .titre-logement{
-        font-size: 26px;
+        font-size: 24px;
+        Line-height: 25.67px;
     }
 
     .lieu-logement{
@@ -143,7 +145,45 @@ h3{
     }
 
     .proprietaire-name{
-        font-size: 16px;
+        font-size: 18px;
     }
 
+}
+
+@media (max-width: 400px) {
+    .logement{
+        flex-direction: column;
+    }
+
+    .titre-logement{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    h1{
+        line-height: 30px;
+    }
+
+    .lieu-logement{
+        display: flex;
+        justify-content: center;
+        font-size: 11px;
+    }
+
+    .description-tags{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .proprietaire-logement{
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+    .proprietaire{
+        padding: 10px;
+    }
+    .proprietaire-name{
+        font-size: 16px;
+    }
 }

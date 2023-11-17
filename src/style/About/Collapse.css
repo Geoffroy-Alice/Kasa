@@ -24,9 +24,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: Montserrat;
     font-size: 24px;
-    font-weight: 500;    
+    font-weight: 500;  
+    Line-height: 34.22px; 
     text-align: left;
     color: #FFFFFF;
     padding-left: 20px;
@@ -57,10 +57,8 @@ p{
     width: 95%;
     padding: 20px;
     color: #FF6060;
-    font-family: Montserrat;
     font-size: 24px;
     font-weight: 400;
-    line-height: 34px;
     letter-spacing: 0em;
     text-align: left;
     padding-bottom: 20px;
@@ -83,11 +81,11 @@ p{
     display: flex;
     justify-content: flex-end;
     width: 100%;
-
 }
 
 .list-equipment{
     margin: 4px;
+    padding: 0;
 }
 
 li{
@@ -117,11 +115,23 @@ li{
     } 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 401px) and (max-width: 767px) {
     .title{
-        font-size: 20px;
+        height: 35px;
+        font-size: 13px;
     }
 
+    .chevron{
+
+    }
+
+    .info{
+        border-radius: 10px;
+    }
+
+    .infos{
+        border-radius: 10px;
+    }
     .info-title{
         width: 98%;
     }
@@ -134,6 +144,28 @@ li{
         flex-direction: column;
     }  
 
+    .collapse-container{
+        width: 111%;
+    }
+
+    .collapse-container-equipment{
+        width: 111%;
+        justify-content: flex-start;
+    } 
+}
+
+@media screen and (max-width: 400px) {
+    .title{
+        height: 35px;
+        font-size: 13px;
+    }
+    p{
+        width: 85%;
+        font-size: 14px;
+    }
+    .collapse-logement {
+        flex-direction: column;
+    }  
     .collapse-container{
         width: 111%;
     }

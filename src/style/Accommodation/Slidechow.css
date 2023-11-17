@@ -93,7 +93,7 @@
     }
 }
 
-@media screen and (min-width: 401px) and (max-width: 767px) {
+@media screen and (min-width: 411px) and (max-width: 767px) {
     .slideshow{
         height: 255px;
     }
@@ -114,7 +114,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 410px) {
     .slideshow{
         height: 170px;
     }

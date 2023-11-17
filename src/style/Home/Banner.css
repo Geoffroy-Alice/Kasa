@@ -27,7 +27,7 @@
     position: absolute;
 }
 
-@media screen and (min-width: 401px) and (max-width: 767px) {
+@media screen and (min-width: 411px) and (max-width: 767px) {
     .banner{
         height: 111px;
         border-radius: 10px;
@@ -43,7 +43,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
     .banner{
         height: 110px;
         border-radius: 10px;

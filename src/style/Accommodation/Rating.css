@@ -4,13 +4,13 @@
     height: 36px;
 }
 
-@media screen and (min-width: 401px) and (max-width: 767px) {
+@media screen and (min-width: 411px) and (max-width: 767px) {
     .star-rating{
         height: 16px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
     .star-rating{
         height: 16px;
     }

@@ -120,7 +120,7 @@ h3{
     }
 }
 
-@media screen and (min-width: 401px) and (max-width: 767px) {
+@media screen and (min-width: 411px) and (max-width: 767px) {
     .logement{
         flex-direction: column;
     }
@@ -156,7 +156,7 @@ h3{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
     .logement{
         flex-direction: column;
     }

@@ -59,7 +59,7 @@
     }
 }
 
-@media screen and (min-width: 401px) and (max-width: 767px) {
+@media screen and (min-width: 411px) and (max-width: 767px) {
     .number-error{
         font-size: 96px;
         margin-bottom: 10px;
@@ -73,7 +73,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
     .number-error{
         font-size: 80px;
         margin-bottom: 10px;

@@ -1,5 +1,5 @@
 .info{
-    width: 90%;
+    width: 95%;
     margin: 20px 0px;
     display: flex;
     flex-direction: column;
@@ -101,6 +101,10 @@ li{
         font-size: 22px;
     }
 
+    .info{
+        width: 90%;
+    }
+
     .collapse-logement {
         flex-direction: column;
     }  
@@ -121,11 +125,8 @@ li{
         font-size: 13px;
     }
 
-    .chevron{
-
-    }
-
     .info{
+        width: 90%;
         border-radius: 10px;
     }
 
@@ -137,7 +138,7 @@ li{
     }
 
     p{
-        font-size: 20px;
+        font-size: 13px;
     }
 
     .collapse-logement {
@@ -161,10 +162,11 @@ li{
     }
     p{
         width: 85%;
-        font-size: 14px;
+        font-size: 13px;
     }
     .collapse-logement {
         flex-direction: column;
+        padding-top: 0;
     }  
     .collapse-container{
         width: 111%;

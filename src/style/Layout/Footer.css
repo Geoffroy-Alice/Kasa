@@ -34,8 +34,12 @@
 }
 
 @media (max-width: 410px) {
+.footer{
+    height: 30.95px;
+}
+
     .footer-texte{
-        font-size: 16px;
+        font-size: 12px;
         padding-top: 0;
     }
 }

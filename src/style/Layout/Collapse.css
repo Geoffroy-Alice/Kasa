@@ -84,8 +84,8 @@ p{
 }
 
 .list-equipment{
-    margin: 4px;
     padding: 0;
+    margin: 0;
 }
 
 li{
@@ -169,11 +169,11 @@ li{
         padding-top: 0;
     }  
     .collapse-container{
-        width: 111%;
+        width: 105%;
     }
 
     .collapse-container-equipment{
-        width: 111%;
+        width: 105%;
         justify-content: flex-start;
     } 
 }

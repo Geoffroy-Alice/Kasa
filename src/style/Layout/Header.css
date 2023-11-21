@@ -25,7 +25,6 @@
 }
 
 .page_accueil {
-    display: flex;
     height: 34px;
     text-decoration: none;
     color: #ff6060;
@@ -36,7 +35,6 @@
 }
 
 .page_Apropos {
-    display: flex;
     height: 34px;
     text-decoration: none;
     color: #ff6060;
@@ -73,7 +71,6 @@
         font-size: 20px;
         width: 50%;
         display: flex;
-        justify-content: flex-end;
     }
 
     .page_Apropos{
@@ -83,21 +80,23 @@
 
 @media screen and (max-width: 410px) {
     .header{
+        background-repeat: no-repeat;
         padding: 10px;
+        padding-bottom: 0;
         flex-direction: column;
-        justify-content: center;
     }
 
     .logo{
-        width: 81%;
-        padding-bottom: 20px;
+        background-image: url('../../assets/LOGO-media.png'); 
+        width: 56%;
+        height: 47px;
     }
 
     .pages_nav{
         width: 100%;
         justify-content: space-around;
-        padding: 15px 0;
-        font-size: 22px;
+        padding-top: 10px;
+        font-size: 12px;
     }
 
     .page_Apropos{

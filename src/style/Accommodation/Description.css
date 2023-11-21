@@ -38,7 +38,6 @@ h2{
 .description-tags{
     display: flex;
     flex-direction: row;
-    padding-top: 30px;
 }
 
 .tags{
@@ -63,8 +62,7 @@ h2{
 .proprietaire-logement{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 93px;
+    justify-content: space-between;
 }
 
 h3{
@@ -82,6 +80,8 @@ h3{
 
 .proprietaire-photo{
     width: 35%;
+    display: flex;
+    justify-content: center;
 }
 
 .photo-proprietaire{
@@ -116,7 +116,7 @@ h3{
         flex-direction: row-reverse;
         align-items: center;
         padding-top: 20px;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
 
@@ -146,13 +146,13 @@ h3{
     }
 
     .proprietaire-name{
-        font-size: 12px;
+        font-size: 14px;
         line-height: 17.11px;
     }
 
     .photo-proprietaire{
-        width: 32px;
-        height: 32px;
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -181,10 +181,11 @@ h3{
     }
     .proprietaire-logement{
         flex-direction: row-reverse;
+        justify-content: space-between;
         align-items: center;
     }
     .proprietaire{
-        padding: 10px;
+        padding: 10px 0;
     }
     .proprietaire-name{
         font-size: 12px;

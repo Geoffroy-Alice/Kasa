@@ -55,7 +55,7 @@ function Card() {
                 </div>
                 <div className="collapse-container-equipment">
                     <Collapse className="description-equipement"
-                        title={'Equipement'}              
+                        title={'Équipement'}              
                         description={logement.equipments.map((eq, i) => (                      
                             <ul key={i} className="list-equipment">
                                 <li>{eq}</li>

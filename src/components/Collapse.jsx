@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import '.././style/About/Collapse.css';
+import '../style/Layout/Collapse.css';
 import Chevron from '.././assets/Vector.png';
 
 //-----Gestion de l'affichage des informations-----

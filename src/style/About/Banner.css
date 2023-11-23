@@ -17,5 +17,6 @@
 @media (max-width: 410px) {
     .about-banner{
         height: 170px;
+        border-radius: 10px;
     }
 }

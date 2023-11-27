@@ -3,7 +3,6 @@ import '../style/Layout/Header.css';
 import {NavLink} from 'react-router-dom';
 
 function Header (){
-    const linkRoute = window.location.pathname;
 
     return (
         <header className='header'>

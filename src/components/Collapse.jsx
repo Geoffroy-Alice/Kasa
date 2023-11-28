@@ -22,7 +22,7 @@ function Collapse ({title, description}){
             </div>
             {Open && //-----Si le collapse est ouvert alors on affiche la description-----
             <div className="info-description">
-                <p>{description}</p>
+                <div className="paragraphe-description">{description}</div>
             </div>}
         </div>
     )
